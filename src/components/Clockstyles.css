@@ -1,0 +1,88 @@
+.container {
+    padding: 2em;
+    min-width: 500px;
+    min-height: 400px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.length-control {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.length {
+    font-size: 2em;
+}
+
+.decrement,
+.increment {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    margin: 0 0.5em 0 0.5em;
+}
+
+.clock {
+    width: 70%;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.233);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.clock h2 {
+    font-size: 3em;
+}
+
+
+.control-buttons {
+    margin: auto;
+    width: 100px;
+    position: relative;
+}
+
+.control-buttons button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+}
+
+#stop {
+    display: none;
+}
+
+#stop.active {
+    display: block;
+}
+
+#start.active {
+    display: none;
+}
+
+.reset {
+    margin-left: 20px;
+}
+
+.attribution {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.attribution a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
