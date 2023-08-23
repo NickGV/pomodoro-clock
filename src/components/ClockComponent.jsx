@@ -2,12 +2,9 @@ import "./Clockstyles.css";
 import { useClock } from "../hooks/useClock";
 export const ClockComponent = () => {
     const {
-        breakIncrease,
-        breakDecrease,
-        sessionDecrease,
-        sessionIncrease,
-        breakLength,
-        sessionLength,
+        changeTime,
+        breakTime,
+        sessionTime,
         timingType,
         play,
         reset,
@@ -28,16 +25,16 @@ export const ClockComponent = () => {
                             <button
                                 className="decrement"
                                 disabled={play}
-                                onClick={breakDecrease}
+                                onClick={() => changeTime("breakD")}
                                 id="break-decrement"
                             >
                                 <i className="fa-solid fa-minus"></i>
                             </button>
-                            <strong className="length">{breakLength}</strong>
+                            <strong className="length">{breakTime}</strong>
                             <button
                                 className="increment"
                                 disabled={play}
-                                onClick={breakIncrease}
+                                onClick={() => changeTime("breakI")}
                                 id="break-increment"
                             >
                                 <i className="fa-solid fa-plus"></i>
@@ -50,16 +47,16 @@ export const ClockComponent = () => {
                             <button
                                 className="decrement"
                                 disabled={play}
-                                onClick={sessionDecrease}
+                                onClick={() => changeTime("sessionD")}
                                 id="session-decrement"
                             >
                                 <i className="fa-solid fa-minus"></i>
                             </button>
-                            <strong className="length">{sessionLength}</strong>
+                            <strong className="length">{sessionTime}</strong>
                             <button
                                 className="increment"
                                 disabled={play}
-                                onClick={sessionIncrease}
+                                onClick={() => changeTime("sessionI")}
                                 id="session-increment"
                             >
                                 <i className="fa-solid fa-plus"></i>
