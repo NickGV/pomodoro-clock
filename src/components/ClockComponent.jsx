@@ -85,6 +85,15 @@ export const ClockComponent = () => {
                 preload="auto"
                 src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
             />
+            <footer className="attribution">
+                <a
+                    href="https://github.com/NickGV"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    by NickGV
+                </a>
+            </footer>
         </>
     );
 };
